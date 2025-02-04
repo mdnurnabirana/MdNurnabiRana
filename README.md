@@ -67,6 +67,12 @@
 </p>
 
 <h2 style="color: #36BCF7FF;">📊 GitHub Stats</h2>
+<div align="center">
+  <h3>📈 GitHub Activity Graph</h3>
+  <a href="https://github.com/mdnurnabirana">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=mdnurnabirana" alt="GitHub Activity Graph" />
+  </a>
+</div>
 
 <!-- Section 1: Streak Stats -->
 <div align="center">
@@ -104,3 +110,5 @@
     <img src="https://github-profile-trophy.vercel.app/?username=mdnurnabirana" alt="GitHub Trophies" />
   </a>
 </div>
+
+![](./profile-3d-contrib/profile-night-rainbow.svg)

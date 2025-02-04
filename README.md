@@ -1,5 +1,6 @@
+<h1 align="center">Hi 👋, I'm Md. Nurnabi Rana</h1>
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7FF&lines=Hi!+This+is+Nur;Competetive+Programmer;Machine+Learning+Enthusiasts&center=true&width=500&height=45" alt="Tonmoyhridhaan">
+  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7FF&lines=Competetive+Programmer;Machine+Learning+Enthusiasts&center=true&width=500&height=45" alt="Tonmoyhridhaan">
 </p>
 
 <h2 style="color: #36BCF7FF;">💫 About Me</h2>

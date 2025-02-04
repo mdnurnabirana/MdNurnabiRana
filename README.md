@@ -3,13 +3,15 @@
   <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7FF&lines=Competetive+Programmer;Machine+Learning+Enthusiasts&center=true&width=500&height=45" alt="Tonmoyhridhaan">
 </p>
 
-<h2 style="color: #36BCF7FF;">💫 About Me</h2>
-<p>I am a fourth-year undergraduate student at Premier University Chattogram studying Computer Science and Engineering. I am highly interested in <strong>algorithmic problem-solving</strong>.</p>
+<h2 style="color: #36BCF7FF;"> 💫 About Me</h2> 
+<p>I am a fouth-year undergraduate student at Premier University Chattogram studying Computer Science and Engineering. I am highly interested in <strong>algorithmic problem-solving.</strong></p>  
 
-<ul>
-  <li>🌱 Currently learning <strong>Machine Learning</strong> to cope with present and future tech.</li>
-  <li>📫 You can reach me at <a href="mailto:mdnurnabirana.cse@gmail.com">mdnurnabirana.cse@gmail.com</a></li>
-  <li>📄 My <a href="https://flowcv.com/resume/m4ehnskgfd">Resume</a></li>
+<ul>  
+  <li>🔭 I’m currently studying in <strong>Computer Science and Engineering</strong></li>
+  <li>👯 I’m open to collaborating on <strong>Laravel Development</strong></li>  
+  <li>🌱 I'm currently learning <strong>Machine Learning and Deep Learning</strong>.</li>  
+  <li>📫 You can reach me at <a href="mailto:mdnurnabirana.cse@gmail.com">mdnurnabirana.cse@gmail.com</a></li>  
+  <li>📄 My <a href="https://flowcv.com/resume/m4ehnskgfd">Resume</a></li>  
 </ul>
 
 <h2 style="color: #36BCF7FF;">💻 Tech & Tool Stack</h2>

@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge&logoWidth=20" height="40"/>
   </a>
   &nbsp;
-  <a href="https://facebook.com/your-profile" target="_blank" title="Facebook">
+  <a href="https://www.facebook.com/mdNurnabiRana00/" target="_blank" title="Facebook">
     <img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white&style=for-the-badge&logoWidth=20" height="40"/>
   </a>
   &nbsp;
@@ -36,7 +36,7 @@
     <img src="https://img.shields.io/badge/Portfolio-00C7B7?logo=googlesites&logoColor=white&style=for-the-badge&logoWidth=20" height="40"/>
   </a>
   &nbsp;
-  <a href="https://flowcv.com/resume/m4ehnskgfd" target="_blank" title="Resume">
+  <a href="https://drive.google.com/file/d/1pePTtcFgQ8SCVFSKywQx2MPSTQAGSceJ/view" target="_blank" title="Resume">
     <img src="https://img.shields.io/badge/Resume-F4B400?logo=file&logoColor=white&style=for-the-badge&logoWidth=20" height="40"/>
   </a>
 </p>

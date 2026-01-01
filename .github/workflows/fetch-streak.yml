@@ -1,27 +1,24 @@
 name: Fetch GitHub Streak Image
 
+# Trigger manually or daily
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * *'   # daily at 06:00 UTC
   workflow_dispatch:
-
-# Give permissions to push to repo
-permissions:
-  contents: write
 
 jobs:
   fetch-streak:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout your repo
+      # 1️⃣ Checkout repository
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # 2️⃣ Download streak image from Demolab
-      - name: Download Streak Image
+      # 2️⃣ Download streak SVG
+      - name: Download streak image
         run: |
-          curl -o streak.png "https://streak-stats.demolab.com/?user=mdnurnabirana"
+          curl -L -o streak.svg "https://streak-stats.demolab.com/?user=mdnurnabirana"
 
       # 3️⃣ Configure Git
       - name: Configure Git
@@ -29,11 +26,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 4️⃣ Commit and push the new streak image
-      - name: Commit & Push
+      # 4️⃣ Commit & push
+      - name: Commit and Push
         run: |
-          git add streak.png
+          git add streak.svg
           git commit -m "Update streak image" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/mdnurnabirana/MdNurnabiRana.git

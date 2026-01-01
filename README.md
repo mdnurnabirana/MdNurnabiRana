@@ -95,8 +95,12 @@ I aspire to deliver high-impact solutions through **dedication, clean code, and 
 ---
 ## 🔥 GitHub Streak
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=mdnurnabirana&theme=react-dark&hide_border=true" alt="Streak Stats" />
+  <img src="./streak.png" alt="GitHub Streak Stats" />
 </p>
+
+
+
+
 
 ---
 ## 🔥 GitHub Stats

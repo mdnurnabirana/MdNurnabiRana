@@ -95,12 +95,8 @@ I aspire to deliver high-impact solutions through **dedication, clean code, and 
 ---
 ## 🔥 GitHub Streak
 <p align="center">
-  <img src="./streak.png" alt="GitHub Streak Stats" />
+  <img src="./streak.svg" alt="GitHub Streak Stats" />
 </p>
-
-
-
-
 
 ---
 ## 🔥 GitHub Stats

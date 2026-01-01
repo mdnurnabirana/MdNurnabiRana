@@ -22,7 +22,7 @@ jobs:
       # 2️⃣ Download streak image from Demolab
       - name: Download Streak Image
         run: |
-          curl -o streak.svg "https://streak-stats.demolab.com/?user=mdnurnabirana"
+          curl -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=mdnurnabirana&theme=react-dark"
 
       # 3️⃣ Configure Git
       - name: Configure Git

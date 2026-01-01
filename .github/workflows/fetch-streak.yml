@@ -1,6 +1,5 @@
 name: Fetch GitHub Streak Image
 
-# Trigger daily at 06:00 UTC, or manually
 on:
   schedule:
     - cron: '0 6 * * *'
@@ -18,27 +17,27 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # 2️⃣ Download streak image from DenverCoder1
-      - name: Download Streak Image
-        run: |
-          curl -s -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=mdnurnabirana&theme=react-dark"
-
-      # 3️⃣ Configure Git
+      # 2️⃣ Configure Git
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 4️⃣ Commit and push only if file changed
+      # 3️⃣ Remove old streak.svg
+      - name: Remove old streak.svg
+        run: rm -f streak.svg
+
+      # 4️⃣ Download new streak.svg
+      - name: Download Streak Image
+        run: |
+          curl -s -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=mdnurnabirana&theme=react-dark"
+
+      # 5️⃣ Commit & push
       - name: Commit & Push
         run: |
           git add streak.svg
-          # Check if file changed before committing
-          if ! git diff --cached --quiet; then
-            git commit -m "Update streak image"
-            git push
-          else
-            echo "No changes in streak.svg"
-          fi
+          # force commit even if content is same
+          git commit -m "Update streak image" || echo "No changes to commit"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

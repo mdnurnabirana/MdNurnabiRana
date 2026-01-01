@@ -1,5 +1,6 @@
-name: Fetch GitHub Streak Image
+name: Update GitHub Streak SVG
 
+# Trigger daily at 06:00 UTC, or manually
 on:
   schedule:
     - cron: '0 6 * * *'
@@ -9,12 +10,12 @@ permissions:
   contents: write
 
 jobs:
-  fetch-streak:
+  update-streak:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout your repo
-      - name: Checkout repo
+      # 1️⃣ Checkout the repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       # 2️⃣ Configure Git
@@ -23,20 +24,28 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 3️⃣ Remove old streak.svg
+      # 3️⃣ Remove old streak.svg (if exists)
       - name: Remove old streak.svg
-        run: rm -f streak.svg
+        run: |
+          git rm -f streak.svg || echo "No existing streak.svg to remove"
 
       # 4️⃣ Download new streak.svg
-      - name: Download Streak Image
+      - name: Download new streak image
         run: |
           curl -s -o streak.svg "https://github-readme-streak-stats.herokuapp.com/?user=mdnurnabirana&theme=react-dark"
 
-      # 5️⃣ Commit & push
-      - name: Commit & Push
+      # 5️⃣ Validate the download (basic check)
+      - name: Validate SVG
+        run: |
+          if ! grep -q "<svg" streak.svg; then
+            echo "Download failed or file is invalid. Exiting."
+            exit 1
+          fi
+
+      # 6️⃣ Commit & push
+      - name: Commit & Push changes
         run: |
           git add streak.svg
-          # force commit even if content is same
           git commit -m "Update streak image" || echo "No changes to commit"
           git push
         env:
